@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title>Landing Page</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+                        *{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+
+                }
+                h1{
+                color: blue;
+                font-family: 'Times New Roman', Times, serif;
+                text-align: center;
+                padding: 1rem ;
+                }
+
+                .main{
+                    width: 100%;
+                    height: 100%;
+                }
+                td{
+                    width:26%;
+                }
+
+                ul{
+                    margin:top -4%;
+
+                }
+                ul li
+                { 
+                    list-style: none;
+                    display:inline-block;
+                    padding:10px 16px;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-size: medium;
+                    font-weight: 300;
+                
+                }
+                img{
+                    width:auto;
+                    height: auto;
+                }
+                button{
+                    font-style: italii;
+                    background-color:aliceblue;
+                    font-weight: 400;
+                    color: red;
+                    font-size: larger;
+                    padding: 0.5rem;
+                    
+                }
+                .box a{
+                    color:orange;
+                }
+                .main{
+                    align-content:center;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 1rem;
+                }
+                input{
+                    padding: 1rem;
+                }
+                p{
+                    font-weight: 500;
+                    font-size: x-large;
+                    padding: 20px;
+                    color: white;;
+                }
+                .lp{
+                    background-image: url("data:image/jpeg;base64,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");
+                background-position: center;
+                background-size: cover ;
+                }
+                footer p{
+                text-align: center;
+                padding: 1rem;
+                margin-bottom: 1rem;
+                }
+                .icons{
+                    padding: 10px;
+                    gap: 5px;
+                    justify-content: space-between;
+                    margin: auto;
+                }
+                h3{
+                    color: green;
+                    text-align: center;
+                font-size: larger;
+                padding:10px;
+                }
+    </style>
+    </head>
+    <body>
+        <header>
+            <h1>Website Designed For Free</h1>
+        </header>
+        <div class="lp">
+                <table>
+                <tr>
+                    <td class="content">
+                    
+                    </td>
+                <td>
+                  
+                </td>
+                    <td class="box">
+                        <ul>
+                        <li>
+                        <a href="#" >Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                        <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <button type="button" name="Sign In">Sign In</button>
+                        </li>
+                        </ul>
+                    </td>  
+                
+                </tr> 
+                </table> 
+                <div class="main">
+                    <p id="des">A Good Website attracts the customers, <br>
+                    we attracts the customers by building  websites <br>You can build your website with your attracted templates <br>we guide you until end  <br> </p>
+                    <P id="at">Build Your Own Website Today!</P>
+                    <input type="email" placeholder="Enter your email address" id="email">
+                    <button name="Sign Up">Sign Up</button>
+                
+                 </div>
+        <div class="icons">
+            <p>Follow Us On</p>
+            <i class="ri-google-fill"></i>
+            <i class="ri-instagram-line"></i>
+            <i class="ri-facebook-fill"></i>
+        </div>
+        </div>
+        <footer>
+            <h3>Akshay Kalyan Landing Page</h3>
+            <i class="fa fa-copyright" aria-hidden="true"></i>
+        </footer>
+       
+    </body>
+
+</html>
